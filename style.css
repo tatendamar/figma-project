@@ -1,0 +1,147 @@
+:root{
+    --primary-default: #F9F9F9;
+    --primary-dark: #0f0840;
+    --primary-text: #02021c;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Manrope', sans-serif;
+}
+.container {
+    display: flex;
+    background-color: var(--primary-default);
+    width: 1084px;
+    height: 1059px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.sidebar {
+    background-color: #fff;
+    width: 280px;
+    height: 960px;
+    padding: 16px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    width: 100px;
+}
+
+.search-bar {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 16px 12px 16px 12px;
+    border: 1px solid #C6CACE;
+    border-radius: 10px;
+}
+
+.search-bar.search-icon::before {
+    content: url("images/search.svg");
+    position: absolute;
+    top: 50%;
+    width: 20px;
+    height: 20px;
+}
+
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin-bottom: 8px;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav   
+ ul li a:hover {
+    background-color: #f0f0f0;
+}
+
+.nav-items {
+    margin-top: 125px;
+}
+
+.feature {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.main {
+    flex-grow: 1;
+    padding: 24px 16px 612px 16px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    width: 788px;
+    height: 1051px;
+    background-color: #fff
+}
+
+.items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.item {
+    background-color: #fff;
+    padding: 24px 24px;
+    border-radius: 16px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.item .header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.item .content {
+    margin-bottom: 10px;
+}
+
+.item .buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item .buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
