@@ -12,13 +12,14 @@
 <body>
     <div class="container">
         <div class="sidebar">
-            <div class="logo">
-                <p>AGoodCompany</p>
-            </div>
-            <div class="search-bar search-icon">
-                <input type="text" placeholder="Search">
-            </div>
+            <div class="color-overlay"></div>
             <nav>
+                <div class="logo">
+                    <p>AGoodCompany</p>
+                </div>
+                <div class="search-bar search-icon">
+                    <input type="text" placeholder="Search">
+                </div>
                 <ul>
                     <li class="home"><a href="#"><img src="images/home.svg" alt="home"> Home</a></li>
                     <li><a href="#"><img src="images/menu1.svg" alt="menu1"> Menu 1</a></li>
@@ -32,16 +33,25 @@
                    </div>
 
                 </ul>
+
+                <div class="feature">
+                    <h4>Feature Available now!</h4>
+                    <p>Check out the new dashboard
+                    Pages now load faster</p>
+                    <img src="images/Rectangle 19.png" alt="Feature">
+                </div>
             </nav>
-            <div class="feature">
-                <h4>Feature Available now!</h4>
-                <p>Check out the new dashboard
-                Pages now load faster</p>
-                <img src="images/Rectangle 19.png" alt="Feature">
-            </div>
         </div>
 
+        <nav class="mobile-nav">
+            <div class="logo"><p>AGoodCompany</p></div>
+            <div class="menu-icon">
+                <img src="images/menu-svgrepo-com.svg" alt="menu">
+            </div>
+        </nav>
+
         <div class="main">
+            <div class="color-overlay-main"></div>
             <p>Your Items</p>
             <div class="items">
                 <div class="item">
@@ -166,5 +176,7 @@
             </div>
         </div>
     </div>
+
+    <script src="app.js"></script>
 </body>
 </html>
