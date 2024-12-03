@@ -45,17 +45,6 @@ body {
    
 }
 
-/* .sidebar::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: #f3fcee;
-    z-index: -1;
-  
-    opacity: .1;
-} */
-
 
 .logo {
     text-align: center;
@@ -287,6 +276,7 @@ nav.mobile-nav {
     }
 
     .sidebar {
+        display: none;
         width: 100%;
         height: auto;
         margin-bottom: 16px;
